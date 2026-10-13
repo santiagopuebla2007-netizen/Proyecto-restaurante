@@ -80,7 +80,7 @@ ADMINISTRACIÓN
 - Las pantallas principales están diseñadas en formato de
   escritorio de 1440 x 1024.
 
-  5. ESTADO
+5. ESTADO
 ------------------------------------------------------------
 -El proyecto se encuentra en proceso por lo que todavia no se 
 logra apreciar todo lo que puede ofrecer
@@ -92,8 +92,4 @@ logra apreciar todo lo que puede ofrecer
 
 
 
-9. AUTORÍA Y LICENCIA
-------------------------------------------------------------
-La autoría, las condiciones de distribución y la licencia no
-están especificadas en el material revisado. Deben definirse
-antes de publicar o reutilizar el proyecto y sus recursos.
+
