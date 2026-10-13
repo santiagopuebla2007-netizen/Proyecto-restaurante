@@ -1,30 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurante Guardia Vieja</title>
-    <link rel="stylesheet" href="proyecto.css">
+    <title>Guardia Vieja Restobar</title>
+    <link rel="stylesheet" href="restaurante.css">
 </head>
 
 <body>
-    <header>
-        <nav>
+        <header class="header">
+            <div class="logo">
+                <img src="guardia vieja.jpg" alt="Logo" width="100px" height="100px">
+                </div>
+        <nav class="menu">
             <ul>
-                <li><img src="guardiavieja.jpg" alt="Logo" width="100px" height="100px"></li>
-                <li>INICIO</li>
-                <li>MENU</li>
-                <li>LOCAL</li>
-                <li>QUIENES SOMOS</li>
-                <li>CONTACTO</li>
-                <li>UBICACION</li>
-                <li>MIS RESERVAS</li>
-                
+            <li><a href="#Inicio">INICIO</a></li>
+            <li><a href="#Menu">MENU</a></li>
+            <li><a href="#Local">LOCAL</a></a></li>
+            <li><a href="#Quienes somos">QUIENES SOMOS</a></li>
+            <li><a href="#Contacto">CONTACTO</a></li>
+            <li><a href="#Ubicacion">UBICACION</a></li>
+            <li><a href="#Mis Reservas">MIS RESERVAS</a></li>
             </ul>
         </nav>
     </header>
+       
+        <main>
+        <h1>GUARDIA VIEJA<br>RESTOBAR</h1>
+        <p class="subtitulo">Un lugar cálido e íntimo, un lugar para vos</p>
+        </main>
 
-    <h1>GUARDIA VIEJA <br> RESTO BAR</h1>
+    <section id="Menu" class="seccion-menu">
+        <div class="texto-menu">
+        <h2>MENU</h2>
+        <p>las especialidades gastronomicas son creaciones que se presentancon la opcion de maridajes recomendados por el sommelier</p>
+        <a href="#">VER MENU</a>
+    </div>
+
+    <div class="foto-menu">
+        <img src="salmon.jpg" alt="foto de comida">
+        <img src="canelones" alt="foto de comida">
+    </div>
 </body>
 </html>
+
 
