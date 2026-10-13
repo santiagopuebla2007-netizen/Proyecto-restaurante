@@ -1,1 +1,18 @@
+body{
+    background-color: #1e4624;
+}
+h1{
+    text-align: center;
+    color: #F1EBDD;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   
+}
+nav {
+    display: flex;
+    padding: 0;
+    gap: 30px;
+    border-bottom: #F1EBDD;
+   
+
+}
 
