@@ -1,1 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Guardia Vieja</title>
+    <link rel="stylesheet" href="proyecto.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><img src="guardiavieja.jpg" alt="Logo" width="100px" height="100px"></li>
+                <li>INICIO</li>
+                <li>MENU</li>
+                <li>LOCAL</li>
+                <li>QUIENES SOMOS</li>
+                <li>CONTACTO</li>
+                <li>UBICACION</li>
+                <li>MIS RESERVAS</li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <h1>GUARDIA VIEJA <br> RESTO BAR</h1>
+</body>
+</html>
 
