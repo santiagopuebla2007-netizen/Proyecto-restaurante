@@ -34,14 +34,27 @@
         <div class="texto-menu">
         <h2>MENU</h2>
         <p>las especialidades gastronomicas son creaciones que se presentancon la opcion de maridajes recomendados por el sommelier</p>
-        <a href="#">VER MENU</a>
+        <a href="menu.html">VER MENU</a>
     </div>
 
     <div class="foto-menu">
         <img src="salmon.jpg" alt="foto de comida">
-        <img src="canelones" alt="foto de comida">
+        <img src="canelones.jpg" alt="foto de comida">
     </div>
+    </section>
+
+    <section id="Local" class="seccion-local">
+        <div class="texto-local">
+            <h2>CONOCE<br>NUESTRO LOCAL</h2>
+            <a href="#ver mas">VER MAS</a>
+        </div>
+
+        <div class="fotos-local">
+            <img src="foto de adentro.jpg" alt="foto de lugar">
+            <img src="foto de afuera.jpg" alt="foto de lugar">
+        </div>
+
+
+    </section>
 </body>
 </html>
-
-
