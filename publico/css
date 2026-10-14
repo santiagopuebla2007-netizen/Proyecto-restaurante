@@ -3,6 +3,7 @@ body{
     color: #F1EBDD;
     font-family: 'Georgia', 'Times New Roman', Times, serif;
     margin: 0;
+    width: 100%;
 }
 
 .header {
@@ -18,7 +19,7 @@ body{
 }
 
 h1{
-   font-size: 48px;
+   font-size: 60px;
     color: #F1EBDD;
     font-weight: normal;
     letter-spacing: 2px;
@@ -73,29 +74,54 @@ html{
     margin-top: 400px;
     padding-top: 50px;  
     min-height: 80vh;
-}
-
-
-.seccion-menu {
-    display: flex;
+      display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 40px;
-    margin-top: 100px;
+    padding-left: 200px;
 }
 
 .texto-menu {
     max-width: 350px;
+    font-size: 25px;
 }
 
 .fotos-menu {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding-right: 25px;
+    width: 30px;
+    height: 30px;
 }
+
 
 .texto-menu a{
     color: #F1EBDD;
     text-decoration: none;
 }
+
+.seccion-local{
+    padding-left: 200px;
+    font-size: 25px;
+    display: flex;
+    color: #F1EBDD;
+    margin-top: 400px; 
+    padding-top: 50px
+}
+
+.seccion-local a{
+    text-decoration: none;
+    color: #F1EBDD;
+}
+
+.fotos-local{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 20vw;
+    width: 400px;
+    height: 400px;
+}
+
 
