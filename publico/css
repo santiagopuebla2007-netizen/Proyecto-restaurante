@@ -16,6 +16,9 @@ body{
     padding: 15px 0;  
     width: 100%;
     gap: 60px;
+    box-shadow: 0px 1px 2px white;
+    
+    
 }
 
 h1{
@@ -28,6 +31,7 @@ h1{
     font-family: Georgia, 'Times New Roman', Times, serif
 }
 main{
+    
     margin-top: 100px; 
     margin-bottom: 150px;
 }
@@ -71,14 +75,11 @@ html{
 }
 
 .seccion-menu{
-    margin-top: 400px;
-    padding-top: 50px;  
-    min-height: 80vh;
-      display: flex;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-    padding-left: 200px;
+    gap: 60px;
+    min-height: 100vh;
 }
 
 .texto-menu {
@@ -88,40 +89,57 @@ html{
 
 .fotos-menu {
     display: flex;
-    flex-direction: column;
     gap: 20px;
-    padding-right: 25px;
-    width: 30px;
-    height: 30px;
+    align-items: center;
+    
 }
 
 
 .texto-menu a{
     color: #F1EBDD;
     text-decoration: none;
+    
+    
 }
 
 .seccion-local{
-    padding-left: 200px;
-    font-size: 25px;
     display: flex;
-    color: #F1EBDD;
-    margin-top: 400px; 
-    padding-top: 50px
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    min-height: 100vh;
 }
 
 .seccion-local a{
     text-decoration: none;
     color: #F1EBDD;
+    
+}
+.texto-local{
+    max-width: 350px;
+    font-size: 25px;
+    
+
 }
 
 .fotos-local{
-    display: flex;
-    flex-direction: column;
+     display: flex;
     gap: 20px;
-    padding-left: 20vw;
-    width: 400px;
-    height: 400px;
+    align-items: center;
 }
 
+.info-local{
+    
+
+    line-height: 40px;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    
+}
+.img-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    
+}
 
