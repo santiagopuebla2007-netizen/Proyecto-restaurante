@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guardia Vieja Restobar</title>
-    <link rel="stylesheet" href="restaurante.css">
+    <link rel="stylesheet" href="proyecto.css">
 </head>
 
 <body>
@@ -25,11 +25,12 @@
         </nav>
     </header>
        
-        <main>
+        <main id="Inicio">
         <h1>GUARDIA VIEJA<br>RESTOBAR</h1>
         <p class="subtitulo">Un lugar cálido e íntimo, un lugar para vos</p>
         </main>
-
+    <br>
+    <br>
     <section id="Menu" class="seccion-menu">
         <div class="texto-menu">
         <h2>MENU</h2>
@@ -38,22 +39,27 @@
     </div>
 
     <div class="foto-menu">
-        <img src="salmon.jpg" alt="foto de comida">
-        <img src="canelones.jpg" alt="foto de comida">
+        <img style="border-radius: 20%;" src="salmon.jpg" alt="foto de comida" width="300" height="300">
+        <img style="border-radius: 20%;" src="canelones.jpg" alt="foto de comida" width="300" height="300">
     </div>
     </section>
 
     <section id="Local" class="seccion-local">
         <div class="texto-local">
             <h2>CONOCE<br>NUESTRO LOCAL</h2>
-            <a href="#ver mas">VER MAS</a>
+            <a href="local.html">VER MAS</a>
         </div>
 
         <div class="fotos-local">
-            <img src="foto de adentro.jpg" alt="foto de lugar">
-            <img src="foto de afuera.jpg" alt="foto de lugar">
+            <img style="border-radius: 20%;" src="foto de adentro.jpg" alt="foto de lugar" width="300" height="300">
+            <img style="border-radius: 20%;" src="foto-de-afuera.jpg" alt="foto de lugar" width="300" height="300">
         </div>
 
+
+    </section>
+
+    <section id="Ubicacion" class="Ubicacion">
+        <img src="ubicacion-foto.png" alt="Foto de ubicacion" width="100%" height="100%">
 
     </section>
 </body>
