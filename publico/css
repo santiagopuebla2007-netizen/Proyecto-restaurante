@@ -21,14 +21,16 @@ body{
     
 }
 
-h1{
-   font-size: 60px;
+.Titulo-principal{
+    
+    font-size: 60px;
     color: #F1EBDD;
     font-weight: normal;
     letter-spacing: 2px;
     margin: 40px auto 10px auto;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif
+    
 }
 main{
     
@@ -206,4 +208,30 @@ html{
     margin-top: 15%;
 }
 
+.seccion-contactos {
+    margin-top: 15%;
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-align: center;
+    border: 2px solid #F1EBDD ;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 6px black;
+    background-image: url(foto\ de\ congactos.jpg);
+    background-size: cover;      
+    background-position: center;
+    color: black;
+    text-decoration: overline underline ;
+    
+    
+    
+}
+.seccion-contactos ul {
+    
+    
+    margin-top: 10%;
+    letter-spacing: 2px;
+    font-size: 20px;
+    
+
+}
 
