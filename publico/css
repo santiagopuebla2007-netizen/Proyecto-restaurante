@@ -17,13 +17,13 @@ body{
     width: 100%;
     gap: 60px;
     box-shadow:0px 4px 6px rgb(5,5,5);
-    
-    
+    justify-content: center;
+     min-height: 80px;
 }
 
 .Titulo-principal{
     
-    font-size: 60px;
+    font-size: 80px;
     color: #F1EBDD;
     font-weight: normal;
     letter-spacing: 2px;
@@ -56,15 +56,22 @@ main{
     gap: 25px;
 }
 
+.logo {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .logo img{
-    width: 80px;
+     width: 80px;
     height: 80px;
     border-radius: 50%;
     object-fit: cover;
 }
 
 .subtitulo{
-    font-size: 14px;
+    font-size: 17px;
     color: #F1EBDD;
     opacity: 0.9;
     font-style: italic;
@@ -174,7 +181,8 @@ html{
 .reserva-logo{
     display: flex;
     margin-right: 100%;
-    position: fixed;  
+    position: fixed;
+     
 }
 
 .seccion-quienes-somos{
@@ -216,11 +224,12 @@ html{
     border: 2px solid #F1EBDD ;
     padding: 10px 20px;
     box-shadow: 0px 4px 6px black;
-    background-image: url(foto\ de\ congactos.jpg);
     background-size: cover;      
     background-position: center;
-    color: black;
+    color: #F1EBDD;
     text-decoration: overline underline ;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('restoran.jpg');
+
     
     
     
