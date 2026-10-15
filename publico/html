@@ -29,6 +29,10 @@
         <h1>GUARDIA VIEJA<br>RESTOBAR</h1>
         <p class="subtitulo">Un lugar cálido e íntimo, un lugar para vos</p>
         </main>
+
+        <a href="reservas.html" class="reserva-logo">
+            <img style="border-radius: 50%;" src="Captura de pantalla 2026-10-14 185503.png" alt="Reservas" class="imagen-reserva"  width="150" height="150">
+        </a>
     <br>
     <br>
     <section id="Menu" class="seccion-menu">
@@ -58,9 +62,22 @@
 
     </section>
 
-    <section id="Ubicacion" class="Ubicacion">
-        <img src="ubicacion-foto.png" alt="Foto de ubicacion" width="100%" height="100%">
+
+    <section id="Quienes somos" class="seccion-quienes-somos">
+        <div class="foto-texto-quienes-somos">
+            <h2>¿Quienes somos?</h2>
+            <p>
+Guardia Vieja Resto-Bar nació a principios de los años 90 en el corazón de Vistalba, Luján de Cuyo, en una época donde la mítica calle Guardia Vieja era un camino angosto custodiado por cañaverales y un aire rústico de montaña. Fuimos pioneros en transformar este rincón mendocino en un refugio para la noche y los buenos momentos.
+Desde nuestros orígenes, nos propusimos crear un espacio diferente: un rincón íntimo alejado del ruido, donde la luz de las velas, la madera y la música suave invitan a pausar el tiempo. Con los años, nos convertimos en un clásico indiscutido de la zona gracias a nuestra calidez y a nuestra gran especialidad: las fondues de queso y chocolate, ideales para compartir.
+Hoy, mantenemos intacta la esencia rústica y romántica que nos vio nacer, renovando cada fin de semana el compromiso de ofrecerte una experiencia gastronómica única, un servicio cercano y un ambiente mágico para tus noches en Mendoza.</p>
+
+        </div>
+    </section>
+
+     <section id="Ubicacion" class="Ubicacion">
+        <img src="ubicacion.png" alt="Foto de ubicacion" width="100%" height="100%">
 
     </section>
+
 </body>
 </html>
