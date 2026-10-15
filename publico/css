@@ -12,11 +12,11 @@ body{
     position: sticky;   
     top: 0;             
     z-index: 1000;     
-    background-color: #1e4624; 
+    background-color: #edd7c5; 
     padding: 15px 0;  
     width: 100%;
     gap: 60px;
-    box-shadow: 0px 1px 2px white;
+    box-shadow:0px 4px 6px rgb(5,5,5);
     
     
 }
@@ -40,7 +40,7 @@ main{
 .menu a{ 
     list-style: none;
     text-decoration: none;
-    color: #F1EBDD;
+    color: #2d1e18;;
     letter-spacing: 1px;
     font-size: 13px;
     font-weight: 500;
@@ -142,4 +142,68 @@ html{
     gap: 50px;
     
 }
+
+.info-menu{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    gap: 50px; 
+    margin-top: 40px;
+}
+
+.comida a{
+    text-decoration: none;
+    color: #F1EBDD;
+}
+
+
+.comida{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.comida h2 {
+  margin: 0;
+  text-align: center;
+}
+
+.reserva-logo{
+    display: flex;
+    margin-right: 100%;
+    position: fixed;  
+}
+
+.seccion-quienes-somos{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('foto-quienes-somos.png');
+    background-size: cover;      
+    background-position: center;
+    width: 89.5%;
+    height: 130%;
+    display: flex;
+    align-items: center;
+    color: #F1EBDD;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 10%;
+    padding: 150px 79.7px;
+    scroll-margin-top: 200px;
+    flex-direction: column;
+}
+
+.foto-texto-quienes-somos h2{
+    font-size: 40px;
+    margin: 50px;
+}
+
+.foto-texto-quienes-somos p{
+    font-size: 20px;
+    margin: 30px;
+}
+
+.Ubicacion{
+    margin-top: 15%;
+}
+
 
