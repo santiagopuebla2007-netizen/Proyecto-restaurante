@@ -42,7 +42,7 @@ main{
 .menu a{ 
     list-style: none;
     text-decoration: none;
-    color: #2d1e18;;
+    color: #2d1e18;
     letter-spacing: 1px;
     font-size: 13px;
     font-weight: 500;
@@ -181,8 +181,7 @@ html{
 .reserva-logo{
     display: flex;
     margin-right: 100%;
-    position: fixed;
-     
+    position: fixed;  
 }
 
 .seccion-quienes-somos{
@@ -230,17 +229,58 @@ html{
     text-decoration: overline underline ;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('restoran.jpg');
 
-    
-    
-    
 }
 .seccion-contactos ul {
-    
-    
     margin-top: 10%;
     letter-spacing: 2px;
     font-size: 20px;
-    
+}
 
+.comidas-texto-foto{
+    background-color:#f5f0e1;
+    width: 70%;  /*lo que ocupa el centro*/        
+    margin: 0 auto;  /*deja el verde a los lados*/
+    padding: 30px;
+    display: flex;
+    flex-direction: column;   /* un plato debajo del otro */
+    gap: 50px;
+    border-radius: 7%;
+}
+
+.plato {
+    display: flex;            /* imagen a la izq, texto a la der */
+    align-items: center;
+    gap: 30px;
+}
+
+.plato img {
+    object-fit: cover;        /* que no se deforme */
+    width: 250px;
+    height: 250px;
+    border-radius: 20%;
+}
+
+.plato h2{
+    color:#1e4624;
+}
+
+.plato p{
+    color:#1e4624;
+}
+
+.texto-plato {
+    flex: 1;
+}
+
+.volver-menu{
+    width: 100%;
+    margin: 30px auto;
+    text-align:right;
+    font-size: 30px; 
+}
+
+.volver-menu a{
+    text-decoration: underline;
+    color: #F1EBDD;
 }
 
