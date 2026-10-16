@@ -1,1 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu</title>
+        <link rel="stylesheet" href="proyecto.css">
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="logo">
+                <img src="/imagenes/guardiavieja.jpg " alt="Imagen del logo"  width="100px" height="100px">
+            </div>
+
+            <nav class="menu">             
+                <ul>
+            <li><a href="proyecto.html#Inicio">INICIO</a></li>
+            <li><a href="proyecto.html#Menu">MENU</a></li>
+            <li><a href="proyecto.html#Local">LOCAL</a></a></li>
+            <li><a href="proyecto.html#Quienes somos">QUIENES SOMOS</a></li>
+            <li><a href="proyecto.html#Contacto">CONTACTO</a></li>
+            <li><a href="proyecto.html#Ubicacion">UBICACION</a></li>
+            <li><a href="proyecto.html#Mis Reservas">MIS RESERVAS</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="Menu" class="info-menu">
+            
+            <div class="comida">    
+               
+                <h2><a href="entrada.html">ENTRADA</a></h2>
+                <a href="entrada.html">
+                <img style="border-radius: 20%;" src="/imagenes/entrada.jpg" alt="foto de entrada" width="300" height="300">
+                    </a>
+           
+            </div>
+
+            <div class="comida">
+                <h2><a href="principal.html">PRINCIPAL</a></h2>
+
+                <a href="principal.html">
+                <img style="border-radius: 20%;" src="/imagenes/principal.jpg" alt="foto de plato principal" width="300" height="300">
+                </a>
+            
+            </div>
+                
+            <div class="comida">
+                    <h2><a href="#Postre">POSTRE</a></h2>
+
+                    <a href="postres.html">
+                    <img style="border-radius: 20%;" src="/imagenes/postre.jpg" alt="foto de postres" width="300" height="300">
+                    </a>
+            
+            </div>
+
+
+            <div class="comida">
+                    <h2><a href="#Postre">POSTRE</a></h2>
+
+                    <a href="postres.html">
+                    <img style="border-radius: 20%;" src="/imagenes/postre.jpg" alt="foto de postres" width="300" height="300">
+                    </a>
+            
+            </div>
+
+        </section>
+    </body>
+</html>
 
