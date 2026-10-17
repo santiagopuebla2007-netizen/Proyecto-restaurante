@@ -10,7 +10,7 @@
     <body>
         <header class="header">
             <div class="logo">
-                <img src="/imagenes/guardiavieja.jpg " alt="Imagen del logo"  width="100px" height="100px">
+                <img src="imagenes/guardiavieja.jpg" alt="Imagen del logo"  width="100px" height="100px">
             </div>
 
             <nav class="menu">             
@@ -26,46 +26,31 @@
             </nav>
         </header>
 
-        <section id="Menu" class="info-menu">
+        <section id="Menu" class="info-bebidas">
             
-            <div class="comida">    
-               
-                <h2><a href="entrada.html">ENTRADA</a></h2>
-                <a href="entrada.html">
-                <img style="border-radius: 20%;" src="/imagenes/entrada.jpg" alt="foto de entrada" width="300" height="300">
-                    </a>
-           
+            <div class="bebidas">    
+                <h2><a href="bebidas-no-alcohol.html">BEBIDAS</a></h2>
+                <img style="border-radius: 20%;" src="imagenes/bebidas-no-alcohol.jpg" alt="foto de bebida" width="300" height="300">
             </div>
 
-            <div class="comida">
-                <h2><a href="principal.html">PRINCIPAL</a></h2>
-
-                <a href="principal.html">
-                <img style="border-radius: 20%;" src="/imagenes/principal.jpg" alt="foto de plato principal" width="300" height="300">
-                </a>
-            
+            <div class="bebidas">
+                <h2><a href="bebidas-alcoholicas.html">BEBIDAS ALCOHOLICAS</a></h2>
+                <img style="border-radius: 20%;" src="imagenes/bebidas-alcoholicas.jpg" alt="foto de bebida alcoholica" width="300" height="300">
             </div>
                 
-            <div class="comida">
-                    <h2><a href="#Postre">POSTRE</a></h2>
-
-                    <a href="postres.html">
-                    <img style="border-radius: 20%;" src="/imagenes/postre.jpg" alt="foto de postres" width="300" height="300">
-                    </a>
-            
+            <div class="bebidas">
+                     <h2><a href="vino-tinto.html">VINOS TINTOS</a></h2>
+                    <img style="border-radius: 20%;" src="imagenes/vinos-tintos.jpg" alt="foto de vino tinto" width="300" height="300">
             </div>
 
-
-            <div class="comida">
-                    <h2><a href="#Postre">POSTRE</a></h2>
-
-                    <a href="postres.html">
-                    <img style="border-radius: 20%;" src="/imagenes/postre.jpg" alt="foto de postres" width="300" height="300">
-                    </a>
-            
+             <div class="bebidas">
+                     <h2><a href="vino-blanco.html">VINOS BLANCOS</a></h2>
+                    <img style="border-radius: 20%;" src="imagenes/vinos-blancos.webp" alt="foto de vino blanco" width="300" height="300">
             </div>
-
         </section>
+
+        <div class="volver-menu">
+            <a href="menu.html">VOLVER AL MENÚ</a>
+        </div>
     </body>
 </html>
-
