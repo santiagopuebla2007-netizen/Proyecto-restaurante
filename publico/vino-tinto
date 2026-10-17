@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu</title>
+        <link rel="stylesheet" href="proyecto.css">
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="logo">
+                <img src="imagenes/guardiavieja.jpg" alt="Imagen del logo"  width="100px" height="100px">
+            </div>
+
+            <nav class="menu">             
+                <ul>
+            <li><a href="proyecto.html#Inicio">INICIO</a></li>
+            <li><a href="proyecto.html#Menu">MENU</a></li>
+            <li><a href="proyecto.html#Local">LOCAL</a></a></li>
+            <li><a href="proyecto.html#Quienes somos">QUIENES SOMOS</a></li>
+            <li><a href="proyecto.html#Contacto">CONTACTO</a></li>
+            <li><a href="proyecto.html#Ubicacion">UBICACION</a></li>
+            <li><a href="proyecto.html#Mis Reservas">MIS RESERVAS</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="comidas-bebidas-texto-foto">
+            
+            <div class="plato-bebida">
+                <img style="border-radius: 20%;" src="imagenes/malbec-joven.jpg" alt="foto de entrada" width="300" height="300">
+                <div class="texto-plato-bebida">
+                 <h2>MALBEC JOVEN</h2>
+                <p>Aromas a ciruela fresca y violetas. En boca es suave, frutal y muy fácil de tomar. Ideal para carnes magras y pastas.</p>
+                </div>
+            </div>
+
+            <div class="plato-bebida">
+                 <img style="border-radius: 20%;" src="imagenes/malbec-reseerva.png" alt="foto de entrada" width="300" height="300">
+                 <div class="texto-plato-bebida">
+                <h2>MALBEC RESERVA</h2>
+                <P>Notas de frutos negros maduros, vainilla y chocolate aportados por su paso por madera. Cuerpo medio, elegante y con final largo.</P>
+                 </div>
+            </div>
+
+            <div class="plato-bebida">
+                <img style="border-radius: 20%;" src="imagenes/malbec-valledeuco.jpg" alt="foto de entrada" width="300" height="300">
+                <div class="texto-plato-bebida">
+                <h2>MALBEC DEL VALLE DE UCO</h2>
+                <p>De perfil moderno y floral. Destaca por su gran frescura, acidez equilibrada y marcadas notas minerales.</p>
+                </div>
+            </div>
+
+            <div class="plato-bebida">
+                <img style="border-radius: 20%;" src="imagenes/cabernet-suavignon.jpg" alt="foto de entrada" width="300" height="300">
+                <div class="texto-plato-bebida">
+                <h2>CABERNET SAUVIGNON</h2>
+                <p>Intenso y con personalidad. Ofrece notas de pimienta negra, pimiento asado y frutos rojos, con taninos firmes ideales para carnes jugosas.</p>
+                </div>
+            </div>
+
+            <div class="plato-bebida">
+                <img style="border-radius: 20%;" src="imagenes/blend-corte.webp" alt="foto de entrada" width="300" height="300">
+                <div class="texto-plato-bebida">
+                <h2>BLEND/CORTE</h2>
+                <p>Exclusiva combinación de uvas tintas elegidas por el enólogo. Complejo, armónico y con un equilibrio perfecto entre fruta y estructura.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="volver-menu">
+            <a href="bebidas.html">Volver a bebidas</a>
+        </div>
+
+    </body>
+</html>
