@@ -10,7 +10,7 @@
 <body>
         <header class="header">
             <div class="logo">
-                <img src="guardia vieja.jpg" alt="Logo" width="100px" height="100px">
+                <img src="imagenes/guardiavieja.jpg" alt="Logo" width="100px" height="100px">
                 </div>
         <nav class="menu">
             <ul>
@@ -31,7 +31,7 @@
         </main>
 
         <a href="reservas.html" class="reserva-logo">
-            <img style="border-radius: 50%;" src="Captura de pantalla 2026-10-14 185503.png" alt="Reservas" class="imagen-reserva"  width="150" height="150">
+            <img style="border-radius: 50%;" src="imagenes/Captura de pantalla 2026-10-14 185503.png" alt="Reservas" class="imagen-reserva"  width="150" height="150">
         </a>
     <br>
     <br>
@@ -43,8 +43,8 @@
     </div>
 
     <div class="foto-menu">
-        <img style="border-radius: 20%;" src="salmon.jpg" alt="foto de comida" width="300" height="300">
-        <img style="border-radius: 20%;" src="canelones.jpg" alt="foto de comida" width="300" height="300">
+        <img style="border-radius: 20%;" src="imagenes/salmon.jpg" alt="foto de comida" width="300" height="300">
+        <img style="border-radius: 20%;" src="imagenes/canelones.jpg" alt="foto de comida" width="300" height="300">
     </div>
     </section>
 
@@ -55,8 +55,8 @@
         </div>
 
         <div class="fotos-local">
-            <img style="border-radius: 20%;" src="foto de adentro.jpg" alt="foto de lugar" width="300" height="300">
-            <img style="border-radius: 20%;" src="foto-de-afuera.jpg" alt="foto de lugar" width="300" height="300">
+            <img style="border-radius: 20%;" src="imagenes/foto de adentro.jpg" alt="foto de lugar" width="300" height="300">
+            <img style="border-radius: 20%;" src="imagenes/foto-de-afuera.jpg" alt="foto de lugar" width="300" height="300">
         </div>
 
 
@@ -88,7 +88,7 @@ Hoy, mantenemos intacta la esencia rústica y romántica que nos vio nacer, reno
     </section>
     
     <section id="Ubicacion" class="Ubicacion">
-        <img src="ubicacion-foto.png" alt="Foto de ubicacion" width="100%" height="100%">
+        <img src="imagenes/ubicacion-foto.png" alt="Foto de ubicacion" width="100%" height="100%">
     </section>
 </body>
 </html>
