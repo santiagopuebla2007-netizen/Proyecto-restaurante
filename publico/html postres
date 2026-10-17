@@ -26,27 +26,27 @@
             </nav>
         </header>
 
-        <section class="comidas-texto-foto">
+        <section class="comidas-bebidas-texto-foto">
             
-            <div class="plato">
+            <div class="plato-bebida">
                 <img style="border-radius: 20%;" src="/imagenes/chovolate.jpg" alt="foto de entrada" width="300" height="300">
-                <div class="texto-plato">
+                <div class="texto-plato-bebida">
                 <h2>FONDUE DE CHOCOLATE</h2>
                 <p>Una sedosa y tibia ganache de chocolate premium, acompañada de una colorida selección de frutas frescas de estación y trozos de bizcocho artesanal para sumergir. Ideal para compartir.</p>
                 </div>
             </div>
 
-            <div class="plato">
+            <div class="plato-bebida">
                  <img style="border-radius: 20%;" src="/imagenes/PANQUEQUE.jpg" alt="foto de entrada" width="300" height="300">
-                 <div class="texto-plato">
+                 <div class="texto-plato-bebida">
                 <h2>PANQUEQUE CON MANZANA CARAMELIZADA Y CANELA</h2>
                 <P>Panqueque caramelizado relleno de dulce de leche y servido con manzanas caramelizadas por encima.</P>
                  </div>
             </div>
 
-            <div class="plato">
+            <div class="plato-bebida">
                 <img style="border-radius: 20%;" src="/imagenes/PANQUEQUE DE DUKCE DE LECHE.jpg" alt="foto de entrada" width="300" height="300">
-                <div class="texto-plato">
+                <div class="texto-plato-bebida">
                 <h2>PANQUEQUE DE DULCE DE LECHE</h2>
                 <p>Un postre tradicional argentino que consiste en una masa fina y ligera, similar a un crêpe europeo, enrollada y rellena con abundante dulce de leche.</p>
                 </div>
