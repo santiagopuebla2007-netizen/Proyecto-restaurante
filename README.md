@@ -1,5 +1,5 @@
 GUARDIA VIEJA RESTO BAR
-Documentación del proyecto de diseño
+Documentación del proyecto
 ============================================================
 
 1. DESCRIPCIÓN
