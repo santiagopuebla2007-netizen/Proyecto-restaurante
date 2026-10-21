@@ -1,1 +1,250 @@
+document.addEventListener("DOMContentLoaded", () => {
 
+  /* ---------- 1. Scroll suave en las anclas ---------- */
+  const ALTO_MENU_FIJO = 0; // si tu header queda fijo arriba, poné su alto en px (ej. 120)
+
+  document.querySelectorAll('a[href^="#"]').forEach((link) => {
+    link.addEventListener("click", (e) => {
+      const id = link.getAttribute("href");
+      if (id.length < 2) return;
+      const destino = document.querySelector(id);
+      if (!destino) return;
+      e.preventDefault();
+      const y = destino.getBoundingClientRect().top + window.scrollY - ALTO_MENU_FIJO;
+      window.scrollTo({ top: y, behavior: "smooth" });
+      history.pushState(null, "", id);
+    });
+  });
+
+  /* ---------- 2. Resaltar en el menú la sección visible ---------- */
+  const navLinks = [...document.querySelectorAll('.menu a[href^="#"]')];
+  const secciones = navLinks
+    .map((a) => document.querySelector(a.getAttribute("href")))
+    .filter(Boolean);
+
+  if (secciones.length) {
+    const observer = new IntersectionObserver(
+      (entradas) => {
+        entradas.forEach((en) => {
+          if (en.isIntersecting) {
+            navLinks.forEach((a) =>
+              a.classList.toggle("activo", a.getAttribute("href") === "#" + en.target.id)
+            );
+
+          }
+        });
+      },
+      { rootMargin: `-${ALTO_MENU_FIJO + 10}px 0px -60% 0px` }
+    );
+    secciones.forEach((s) => observer.observe(s));
+  }
+
+  /* ---------- 3. Botón "volver arriba" ---------- */
+  const btnTop = document.createElement("button");
+  btnTop.textContent = "↑";
+  btnTop.setAttribute("aria-label", "Volver arriba");
+  btnTop.style.cssText =
+    "position:fixed;right:20px;bottom:20px;width:46px;height:46px;border:none;" +
+    "border-radius:50%;background:#F1EBDD;color:#222;font-size:22px;cursor:pointer;" +
+    "box-shadow:0 4px 12px rgba(0,0,0,.3);opacity:0;pointer-events:none;" +
+    "transition:opacity .3s;z-index:900;";
+  document.body.appendChild(btnTop);
+
+  window.addEventListener("scroll", () => {
+    const visible = window.scrollY > 400;
+    btnTop.style.opacity = visible ? "1" : "0";
+    btnTop.style.pointerEvents = visible ? "auto" : "none";
+  });
+  btnTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+
+  /* ---------- 4. Ampliar fotos al hacer clic ---------- */
+  document.querySelectorAll(".foto-menu img, .fotos-local img").forEach((img) => {
+    img.loading = "lazy";
+    img.style.cursor = "zoom-in";
+    img.addEventListener("click", () => abrirLightbox(img.currentSrc || img.src, img.alt));
+  });
+  
+  function abrirLightbox(src, alt) {
+    const fondo = document.createElement("div");
+    fondo.style.cssText =
+      "position:fixed;inset:0;background:rgba(0,0,0,.88);display:flex;flex-direction:column;" +
+      "align-items:center;justify-content:center;z-index:2000;cursor:zoom-out;padding:20px;";
+
+    const grande = document.createElement("img");
+    grande.src = src;
+    grande.alt = alt || "";
+    grande.style.cssText = "max-width:95%;max-height:80vh;border-radius:8px;";
+    fondo.appendChild(grande);
+
+    if (alt) {
+      const pie = document.createElement("p");
+      pie.textContent = alt;
+      pie.style.cssText = "color:#fff;margin-top:12px;font-size:1.1rem;text-align:center;";
+      fondo.appendChild(pie);
+    }
+
+    const cerrar = () => {
+      fondo.remove();
+      document.removeEventListener("keydown", alEscape);
+    };
+    const alEscape = (e) => e.key === "Escape" && cerrar();
+
+    fondo.addEventListener("click", cerrar);
+    document.addEventListener("keydown", alEscape);
+    document.body.appendChild(fondo);
+  }
+});
+
+//Se escribe letra por letra el titulo al cargar la pagina
+
+document.addEventListener("DOMContentLoaded", () => {
+  const subtitulo = document.querySelector(".subtitulo");
+  if (!subtitulo) return;
+
+  const texto = subtitulo.textContent.trim();
+  const VELOCIDAD = 60; 
+  subtitulo.textContent = "";
+
+  let i = 0;
+  const escribir = () => {
+    subtitulo.textContent = texto.slice(0, i) + (i < texto.length ? "▌" : "");
+    if (i < texto.length) {
+      i++;
+      setTimeout(escribir, VELOCIDAD);
+    }
+  };
+  setTimeout(escribir, 500);
+});
+
+//Efecto desvanecimiento del titulo al llegar a la seccion
+
+document.addEventListener("DOMContentLoaded", () => {
+  const subtitulo = document.querySelector(".subtitulo");
+  if (!subtitulo) return;
+
+  const texto = subtitulo.textContent.trim();
+  const VELOCIDAD = 100; // milisegundos por letra (más bajo = más rápido)
+  subtitulo.textContent = "";
+
+  let i = 0;
+  const escribir = () => {
+    subtitulo.textContent = texto.slice(0, i) + (i < texto.length ? "▌" : "");
+    if (i < texto.length) {
+      i++;
+      setTimeout(escribir, VELOCIDAD);
+    }
+  };
+  setTimeout(escribir, 500);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const BRILLO = "rgba(241, 235, 221, 0.95)"; // color del resplandor
+  const links = [...document.querySelectorAll('.menu a')];
+  let activo = null;
+
+  const aplicar = (a, hover) => {
+    const esActivo = a === activo;
+    a.style.transform = hover ? "scale(1.18)" : esActivo ? "scale(1.08)" : "scale(1)";
+    a.style.textShadow = hover
+      ? `0 0 10px ${BRILLO}, 0 0 22px ${BRILLO}`
+      : esActivo
+      ? `0 0 8px ${BRILLO}`
+      : "none";
+  };
+
+
+//menu que se agranda al pasar el mouse 
+
+  links.forEach((a) => {
+    a.style.display = "inline-block";
+    a.style.transition = "transform 0.25s ease, text-shadow 0.25s ease";
+    a.addEventListener("mouseenter", () => aplicar(a, true));
+    a.addEventListener("mouseleave", () => aplicar(a, false));
+  });
+
+  // Detecta la sección visible y marca su link
+  const anclas = links.filter((a) => a.getAttribute("href").startsWith("#"));
+  const observer = new IntersectionObserver(
+    (entradas) => {
+      entradas.forEach((en) => {
+        if (en.isIntersecting) {
+          activo = anclas.find((a) => a.getAttribute("href") === "#" + en.target.id) || null;
+          links.forEach((a) => aplicar(a, false));
+        }
+      });
+    },
+    { rootMargin: "-10% 0px -60% 0px" }
+  );
+
+  anclas.forEach((a) => {
+    const seccion = document.querySelector(a.getAttribute("href"));
+    if (seccion) observer.observe(seccion);
+  });
+});
+
+//Desvanesimiento del titulo
+
+document.addEventListener("DOMContentLoaded", () => {
+  const titulo = document.querySelector(".Titulo-principal");
+  const subtitulo = document.querySelector(".subtitulo");
+  if (!titulo) return;
+
+  window.addEventListener("scroll", () => {
+    const y = window.scrollY;
+    if (y > 700) return;
+    titulo.style.transform = `translateY(${y * 0.3}px)`;
+    titulo.style.opacity = Math.max(0, 1 - y / 500);
+    if (subtitulo) subtitulo.style.opacity = Math.max(0, 1 - y / 400);
+  });
+});
+
+//Boton de reservas que late
+
+document.addEventListener("DOMContentLoaded", () => {
+  const imagen = document.querySelector(".reserva-logo img");
+  if (!imagen) return;
+
+  const pulso = imagen.animate(
+    [
+      { boxShadow: "0 0 0 0 rgba(241, 235, 221, 0.8)" },
+      { boxShadow: "0 0 0 28px rgba(241, 235, 221, 0)" },
+    ],
+    { duration: 1800, iterations: Infinity, easing: "ease-out" }
+  );
+
+  imagen.style.transition = "transform 0.3s ease";
+  imagen.addEventListener("mouseenter", () => {
+    pulso.pause();
+    imagen.style.transform = "scale(1.1)";
+  });
+  imagen.addEventListener("mouseleave", () => {
+    pulso.play();
+    imagen.style.transform = "scale(1)";
+  });
+});
+
+//secciones que aparecen poco a poco
+document.addEventListener("DOMContentLoaded", () => {
+  const secciones = document.querySelectorAll("section");
+
+  secciones.forEach((s) => {
+    s.style.opacity = "0";
+    s.style.transform = "translateY(50px)";
+    s.style.transition = "opacity 0.9s ease, transform 0.9s ease";
+  });
+
+  const observer = new IntersectionObserver(
+    (entradas) => {
+      entradas.forEach((en) => {
+        if (en.isIntersecting) {
+          en.target.style.opacity = "1";
+          en.target.style.transform = "translateY(0)";
+          observer.unobserve(en.target); 
+        }
+      });
+    },
+    { threshold: 0.12 }
+  );
+
+  secciones.forEach((s) => observer.observe(s));
+});
