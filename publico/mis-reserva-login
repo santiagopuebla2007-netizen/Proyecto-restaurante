@@ -1,0 +1,35 @@
+<DOCTYPE HTML>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="proyecto.css">
+    <title>Acceso Admin</title>
+</head>    
+
+<body class="pagina-login">
+
+ <section  id="Mis Reservas" class="login">
+
+<main>
+<form method="POST" action="mis-reservas-login.php">
+   <img src="imagenes/guardiavieja.jpg" alt="Logo Guardia Vieja" class="login-logo">
+<h2>Acceso<br>Administracion</h2>
+<p>Ingrese sus credenciales para acceder al panel de administración.</p>
+
+<input type="text" name="usuario" placeholder="Ingrese nombre de usuario" required>
+<input type="text" name="contrasena" placeholder="Ingrese la contrasena" required>
+<button type="submit">Acceder</button>
+
+
+    <div class="volver-inicio">
+            <a href="proyecto.php">VOLVER AL INICIO</a>
+        </div>
+
+</form>
+
+
+</main>
+</section>
+</body>
+</html>
