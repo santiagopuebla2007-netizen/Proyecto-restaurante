@@ -352,14 +352,136 @@ html{
 }
 
 .reservas form {
+   background-color: #1e4624;
+   border:2px solid black;
+   box-shadow: 0px 4px 6px black;
+   width: 20%;
+   margin: 0 auto;
+   padding: 100px;
+   display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 5%;
+    height: 20%;
+
+}
+
+.reservas input{
+    background-color: #1e4624;
+    border-radius: 10%;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    padding: 10px;
+    color:#edd7c5;
+    margin:10px
+
+}
+
+.form button{
+    background-color: #edd7c5;
+    color: #1e4624;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5%;
+}
+
+.form h2{
+    text-align: center;
+    color:#F1EBDD;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-size: 30px;
+    margin: 0;
+}
+
+.pagina-login{
+    background-color: #1f3722;
+}
+
+.pagina-login main{
+   margin: 0;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    padding: 20px;
+}
+
+.login form{
+    background-color: #1e4624;
     display: flex;
     flex-direction: column;
     gap: 15px;
-    width: 90%;
-    max-width: 450px;
-    background-color: #f5f0e1;
-    padding: 30px;
-    border-radius: 7%;
+    align-items: center;
+    padding: 40px;
+    border-radius: 5%;
+    margin: 0%;
     box-shadow: 0px 4px 6px black;
-    margin-bottom: 80px;
+    max-width: 420px;
+    min-height: 600px; 
+}
+
+.login h2{
+    text-align: center;
+    color: #F1EBDD;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    margin: 0%;
+}
+
+.login p{
+    text-align: center;
+    color: #F1EBDD;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.login input{
+    background-color: #1e4624;
+    color: #F1EBDD;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 8%;
+    padding: 12px;
+    margin: 10px;
+    width: 300px;
+}
+
+.login button{
+      background-color: #edd7c5;
+    color: #1e4624;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5%;
+    border: none;
+    margin: 40px;
+    width: 300px;
+}
+
+.login-logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.volver-inicio{
+    width: 300%;
+      max-width: 1000px;     
+    margin: 20px auto; 
+    margin: 0;
+    text-align:right;
+    font-size: 20px; 
+} 
+
+.volver-inicio a{
+    text-decoration: none;
+    color: #F1EBDD;
 }
