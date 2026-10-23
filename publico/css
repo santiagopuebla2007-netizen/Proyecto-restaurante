@@ -485,3 +485,36 @@ html{
     text-decoration: none;
     color: #F1EBDD;
 }
+
+.titulo-tabla{
+    text-align: center;
+    color: #F1EBDD;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    justify-content: center;
+}
+
+.subtitulo-tabla{
+        text-align: center;
+    color: #F1EBDD;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    justify-content: center;
+} 
+
+.tabla-reserva {
+    border-collapse: separate;
+    border-spacing: 15px 0;
+    background-color: transparent;
+}
+
+.tabla-reserva th,
+.tabla-reserva td {
+    background-color: #F1EBDD;
+    color: #1e4624;
+    padding: 12px;
+    text-align: center;
+}
+
