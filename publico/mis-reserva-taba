@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="proyecto.css">
     </head>
 
-    <body>
+    <body class="pagina-tabla">
         <header class="header">
             <div class="logo">
                 <img src="imagenes/guardiavieja.jpg" alt="Imagen del logo"  width="100px" height="100px">
@@ -15,13 +15,13 @@
 
             <nav class="menu">             
                 <ul>
-            <li><a href="proyecto.php#Inicio">INICIO</a></li>
-            <li><a href="proyecto.php#Menu">MENU</a></li>
-            <li><a href="proyecto.php#Local">LOCAL</a></a></li>
-            <li><a href="proyecto.php#Quienes somos">QUIENES SOMOS</a></li>
-            <li><a href="proyecto.php#Contacto">CONTACTO</a></li>
-            <li><a href="proyecto.php#Ubicacion">UBICACION</a></li>
-            <li><a href="proyecto.php#Mis Reservas">MIS RESERVAS</a></li>
+            <li><a href="proyecto.html#Inicio">INICIO</a></li>
+            <li><a href="proyecto.html#Menu">MENU</a></li>
+            <li><a href="proyecto.html#Local">LOCAL</a></a></li>
+            <li><a href="proyecto.html#Quienes somos">QUIENES SOMOS</a></li>
+            <li><a href="proyecto.html#Contacto">CONTACTO</a></li>
+            <li><a href="proyecto.html#Ubicacion">UBICACION</a></li>
+            <li><a href="proyecto.html#Mis Reservas">MIS RESERVAS</a></li>
                 </ul>
             </nav>
         </header>
@@ -31,7 +31,7 @@
         </div>
 
         <div class="subtitulo-tabla">
-        <p>Lista central de reservas recibidas para hoy, con cliente, contacto, fecha, cantidad de personas y estado.</p>
+        <p>Lista central de reservas recibidas para hoy, con cliente, contacto,<br>fecha, cantidad de personas y estado.</p>
         </div>
 
         <section class="tabla-reserva">
@@ -51,7 +51,7 @@
                 <td>-</td>
                 <td>-</td>
                 <td>-</td>
-                <td>-</td>
+                <td><button class="eliminar">ELIMINAR</button></td>
             </tr>
 
             <tr>
@@ -60,7 +60,7 @@
                 <td>-</td>
                 <td>-</td>
                 <td>-</td>
-                <td>-</td>
+                <td><button class="eliminar">ELIMINAR</button></td>
             </tr>
 
             <tr>
@@ -69,9 +69,28 @@
                 <td>-</td>
                 <td>-</td>
                 <td>-</td>
+                <td><button class="eliminar">ELIMINAR</button></td>
+            </tr>
+
+             <tr>
                 <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><button class="eliminar">ELIMINAR</button></td>
+            </tr>
+
+             <tr>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><button class="eliminar">ELIMINAR</button></td>
             </tr>
 
         </section>
+            <script src="proyecto.js"></script>
 </body>
 </html>
