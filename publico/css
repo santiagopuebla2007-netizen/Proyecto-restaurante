@@ -185,7 +185,7 @@ html{
 }
 
 .seccion-quienes-somos{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/imagenes/foto-quienes-somos.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('imagenes/foto-quienes-somos.png');
     background-size: cover;      
     background-position: center;
     width: 89.5%;
@@ -227,7 +227,7 @@ html{
     background-position: center;
     color: #F1EBDD;
     text-decoration: overline underline ;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/imagenes/restoran.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('imagenes/restoran.jpg');
 
 }
 .seccion-contactos ul {
